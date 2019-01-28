@@ -53,9 +53,9 @@ choco install -y visualstudio2017enterprise --package-parameters="'--add Microso
 Update-SessionEnvironment #refreshing env due to Git install
 
 #--- UWP Workload and installing Windows Template Studio ---
-coco install -y visualstudio2017-workload-netweb
-coco install -y sql-server-2017
-coco install -y sql-server-management-studio
+choco install -y visualstudio2017-workload-netweb
+choco install -y sql-server-2017
+choco install -y sql-server-management-studio
 
 choco install -y nodejs # Node.js Current, Latest features
 choco install -y visualstudio2017buildtools
