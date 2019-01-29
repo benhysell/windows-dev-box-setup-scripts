@@ -49,11 +49,13 @@ code --install-extension msjsdiag.debugger-for-chrome
 # visualstudio2017professional
 # visualstudio2017enterprise
 
+choco feature enable -n=allowGlobalConfirmation
 choco install -y visualstudio2017enterprise --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
 Update-SessionEnvironment #refreshing env due to Git install
 
-#--- UWP Workload and installing Windows Template Studio ---
+
 choco install -y visualstudio2017-workload-netweb
+cinst dotnetcore-sdk
 choco install -y sql-server-2017
 choco install -y sql-server-management-studio
 
